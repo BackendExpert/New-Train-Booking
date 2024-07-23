@@ -2,7 +2,7 @@ import React from 'react'
 
 const LandingImage = () => {
   return (
-    <div className='mt-[-55px] bg-[url(https://wallpapercave.com/wp/wp5682288.jpg)] bg-cover bg-center min-h-screen'>
+    <div className='mt-[-60px] bg-[url(https://wallpapercave.com/wp/wp5682288.jpg)] bg-cover bg-center min-h-screen'>
         <div className="pt-5">
             Train Bookngs
         </div>
