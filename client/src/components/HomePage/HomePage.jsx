@@ -1,8 +1,11 @@
 import React from 'react'
+import LandingImage from './LandingImage'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div>
+        <LandingImage />
+    </div>
   )
 }
 
