@@ -26,7 +26,7 @@ const LandingImage = () => {
 
                         {
                             (() => {
-                                if(){
+                                if(IsSearchTrain === true && IsLogin === false && IsJoin === false){
                                     return (
                                         <div className="">
                                         <form method="post">
