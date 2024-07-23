@@ -94,7 +94,19 @@ const LandingImage = () => {
                                 else if(IsSearchTrain === false && IsLogin === true && IsJoin === false){
                                     return (
                                         <div className={`${ IsLogin ? 'translate-x-0' : 'translate-x-full' } bg-white py-4 px-36 rounded md:h-[400px] transform transition-transform duration-300 ease-in-out`}>
-                                            hi all
+                                            <form >
+                                                <div className="my-2 md:mx-8">
+                                                    <label htmlFor="" className=''>Email : </label>
+                                                    <input type="email" name="" id="" className="w-full h-12 pl-2 rounded bg-gray-200" required placeholder='Enter Email Address' />
+                                                </div>
+                                                <div className="my-2 md:mx-8">
+                                                    <label htmlFor="" className=''>Password : </label>
+                                                    <input type="password" name="" id="" className="w-full h-12 pl-2 rounded bg-gray-200" required placeholder='Enter Password' />
+                                                </div>
+                                                <div className="my-2 md:mx-8">
+                                                    <button type='submit' className='mt-8 font-semibold w-full py-4 px-8 rounded bg-blue-500 text-white shadow-md duration-500 hover:bg-blue-600'>SignIn</button>
+                                                </div>
+                                            </form>
                                         </div>
                                     )
                                 }
