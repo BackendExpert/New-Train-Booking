@@ -10,11 +10,19 @@ const LandingImage = () => {
     const headleSearchTrain = () => {
         SetIsSearchTrain(true)
         SetIsLogin(false)
+        SetIsJoin(false)
     }
 
     const headleLoginCom = () => {
         SetIsSearchTrain(false)
         SetIsLogin(true)
+        SetIsJoin(false)
+    }
+
+    const headleJoin = () => {
+        SetIsSearchTrain(false)
+        SetIsLogin(false)
+        SetIsJoin(true)
     }
 
   return (
@@ -27,7 +35,7 @@ const LandingImage = () => {
                         <div className="md:flex my-4 justify-between md:mx-16 mx-4">
                             <button onClick={headleSearchTrain} className="md:my-0 my-2 bg-none text-white py-4 px-4 border-2 border-white w-full mx-2 rounded duration-500 hover:bg-white hover:text-blue-500">Search Train</button>
                             <button onClick={headleLoginCom} className="md:my-0 my-2 bg-none text-white py-4 px-4 border-2 border-white w-full mx-2 rounded duration-500 hover:bg-white hover:text-blue-500">Login</button>
-                            <button className="md:my-0 my-2 bg-none text-white py-4 px-4 border-2 border-white w-full mx-2 rounded duration-500 hover:bg-white hover:text-blue-500">Registation</button>
+                            <button onClick={headleJoin}className="md:my-0 my-2 bg-none text-white py-4 px-4 border-2 border-white w-full mx-2 rounded duration-500 hover:bg-white hover:text-blue-500">Registation</button>
                         </div>
                     </div>
 
@@ -83,7 +91,20 @@ const LandingImage = () => {
                                     </div>
                                     )
                                 }
-
+                                else if(IsSearchTrain === false && IsLogin === true && IsJoin === false){
+                                    return (
+                                        <div className={`${ IsLogin ? 'translate-x-0' : 'translate-x-full' } bg-white py-4 px-36 rounded md:h-[400px] transform transition-transform duration-300 ease-in-out`}>
+                                            hi all
+                                        </div>
+                                    )
+                                }
+                                else if(IsSearchTrain === false && IsLogin === false && IsJoin === true){
+                                    return (
+                                        <div className={`${ IsJoin ? 'translate-x-0' : 'translate-x-full' } bg-white py-4 px-36 rounded md:h-[400px] transform transition-transform duration-300 ease-in-out`}>
+                                            hi all
+                                        </div>
+                                    )
+                                }
                             })()
                         }
                     </div>
