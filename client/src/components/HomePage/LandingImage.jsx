@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const LandingImage = () => {
+
+
+    const [IsSearchTrain, SetIsSearchTrain] = useState(false)
+    const [IsLogin, SetIsLogin] = useState(false)
+    const [IsJoin, SetIsJoin] = useState(false)
+    
   return (
     <div className='mt-[-60px] bg-[url(https://wallpapercave.com/wp/wp5682288.jpg)] bg-cover bg-center min-h-screen'>
         <div className="">
@@ -18,48 +24,56 @@ const LandingImage = () => {
                         <div className="text-center text-xl font-semibold text-gray-500 mt-8 mb-6">Select Train</div>
                         <hr />
 
-                        <div className="">
-                            <form method="post">
-                                <div className="md:grid grid-cols-2 gap-4 mt-4">
-                                    <div className="md:my-0 my-2">
-                                        <select name="" id="" className='w-full h-12 bg-gray-200 rounded pl-4' required>
-                                            <option value="">To</option>
-                                            <option value="">Colombo</option>
-                                            <option value="">Colombo</option>
-                                            <option value="">Colombo</option>
-                                            <option value="">Colombo</option>
-                                            <option value="">Colombo</option>
-                                        </select>
+                        {
+                            (() => {
+                                if(){
+                                    return (
+                                        <div className="">
+                                        <form method="post">
+                                            <div className="md:grid grid-cols-2 gap-4 mt-4">
+                                                <div className="md:my-0 my-2">
+                                                    <select name="" id="" className='w-full h-12 bg-gray-200 rounded pl-4' required>
+                                                        <option value="">To</option>
+                                                        <option value="">Colombo</option>
+                                                        <option value="">Colombo</option>
+                                                        <option value="">Colombo</option>
+                                                        <option value="">Colombo</option>
+                                                        <option value="">Colombo</option>
+                                                    </select>
+                                                </div>
+                                                <div className="md:my-0 my-2">
+                                                    <input type="date" name="" id="" className='w-full h-12 bg-gray-200 rounded pl-4' required/>
+                                                </div>
+                                                <div className="md:my-0 my-2">
+                                                    <select name="" id="" className='w-full h-12 bg-gray-200 rounded pl-4' required>
+                                                        <option value="">From</option>
+                                                        <option value="">Colombo</option>
+                                                        <option value="">Colombo</option>
+                                                        <option value="">Colombo</option>
+                                                        <option value="">Colombo</option>
+                                                        <option value="">Colombo</option>
+                                                    </select>
+                                                </div>
+                                                <div className="md:my-0 my-2">
+                                                    <select name="" id="" className='w-full h-12 bg-gray-200 rounded pl-4' required>
+                                                        <option value="">Class</option>
+                                                        <option value="">Colombo</option>
+                                                        <option value="">Colombo</option>
+                                                        <option value="">Colombo</option>
+                                                        <option value="">Colombo</option>
+                                                        <option value="">Colombo</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div className="my-8">
+                                                <button className="bg-blue-500 text-white py-4 px-8 rounded w-full">Search Train</button>
+                                            </div>
+                                        </form>
                                     </div>
-                                    <div className="md:my-0 my-2">
-                                        <input type="date" name="" id="" className='w-full h-12 bg-gray-200 rounded pl-4' required/>
-                                    </div>
-                                    <div className="md:my-0 my-2">
-                                        <select name="" id="" className='w-full h-12 bg-gray-200 rounded pl-4' required>
-                                            <option value="">From</option>
-                                            <option value="">Colombo</option>
-                                            <option value="">Colombo</option>
-                                            <option value="">Colombo</option>
-                                            <option value="">Colombo</option>
-                                            <option value="">Colombo</option>
-                                        </select>
-                                    </div>
-                                    <div className="md:my-0 my-2">
-                                        <select name="" id="" className='w-full h-12 bg-gray-200 rounded pl-4' required>
-                                            <option value="">Class</option>
-                                            <option value="">Colombo</option>
-                                            <option value="">Colombo</option>
-                                            <option value="">Colombo</option>
-                                            <option value="">Colombo</option>
-                                            <option value="">Colombo</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div className="my-8">
-                                    <button className="bg-blue-500 text-white py-4 px-8 rounded w-full">Search Train</button>
-                                </div>
-                            </form>
-                        </div>
+                                    )
+                                }
+                            })
+                        }
                     </div>
                 </div>
             </div>
