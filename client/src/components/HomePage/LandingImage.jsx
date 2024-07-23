@@ -6,8 +6,41 @@ const LandingImage = () => {
         <div className="">
             <div className="md:grid grid-cols-2 gap-4">
                 <div className=""></div>
-                <div className="">
-                    Ho alll
+                <div className="py-40 md:mr-24 md:ml-4 md:mx-0 mx-4 ">
+                    <div className="bg-white py-4 px-8 rounded">
+                        <div className="text-center text-xl font-semibold text-gray-500">Select Train</div>
+                        <hr />
+
+                        <div className="">
+                            <form method="post">
+                                <div className="md:grid grid-cols-2 gap-4 mt-4">
+                                    <div className="">
+                                        <select name="" id="" className='w-full h-12 bg-gray-200 rounded pl-4' required>
+                                            <option value="">To</option>
+                                            <option value="">Colombo</option>
+                                            <option value="">Colombo</option>
+                                            <option value="">Colombo</option>
+                                            <option value="">Colombo</option>
+                                            <option value="">Colombo</option>
+                                        </select>
+                                    </div>
+                                    <div className="">
+                                        <input type="date" name="" id="" className='w-full h-12 bg-gray-200 rounded pl-4' required/>
+                                    </div>
+                                    <div className="">
+                                        <select name="" id="" className='w-full h-12 bg-gray-200 rounded pl-4' required>
+                                            <option value="">From</option>
+                                            <option value="">Colombo</option>
+                                            <option value="">Colombo</option>
+                                            <option value="">Colombo</option>
+                                            <option value="">Colombo</option>
+                                            <option value="">Colombo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
