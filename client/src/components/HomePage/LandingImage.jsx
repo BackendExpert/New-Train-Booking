@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const LandingImage = () => {
 
 
-    const [IsSearchTrain, SetIsSearchTrain] = useState(false)
+    const [IsSearchTrain, SetIsSearchTrain] = useState(true)
     const [IsLogin, SetIsLogin] = useState(false)
     const [IsJoin, SetIsJoin] = useState(false)
     
@@ -20,14 +20,14 @@ const LandingImage = () => {
                             <button className="md:my-0 my-2 bg-none text-white py-4 px-4 border-2 border-white w-full mx-2 rounded duration-500 hover:bg-white hover:text-blue-500">Registation</button>
                         </div>
                     </div>
-                    <div className="bg-white py-4 px-8 rounded md:h-[400px]">
-                        <div className="text-center text-xl font-semibold text-gray-500 mt-8 mb-6">Select Train</div>
-                        <hr />
 
                         {
                             (() => {
                                 if(IsSearchTrain === true && IsLogin === false && IsJoin === false){
                                     return (
+                                        <div className="bg-white py-4 px-8 rounded md:h-[400px]">
+                                        <div className="text-center text-xl font-semibold text-gray-500 mt-8 mb-6">Select Train</div>
+                                        <hr />
                                         <div className="">
                                         <form method="post">
                                             <div className="md:grid grid-cols-2 gap-4 mt-4">
@@ -70,15 +70,15 @@ const LandingImage = () => {
                                             </div>
                                         </form>
                                     </div>
+                                    </div>
                                     )
                                 }
-                            })
+                            })()
                         }
                     </div>
                 </div>
             </div>
         </div>
-    </div>
   )
 }
 
