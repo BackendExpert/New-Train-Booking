@@ -94,7 +94,7 @@ const LandingImage = () => {
                                 else if(IsSearchTrain === false && IsLogin === true && IsJoin === false){
                                     return (
                                         <div className={`${ IsLogin ? 'translate-x-0' : 'translate-x-full' } bg-white py-4 px-36 rounded md:h-[400px] transform transition-transform duration-300 ease-in-out`}>
-                                            <form >
+                                            <form className=''>
                                                 <div className="my-2 md:mx-8">
                                                     <label htmlFor="" className=''>Email : </label>
                                                     <input type="email" name="" id="" className="w-full h-12 pl-2 rounded bg-gray-200" required placeholder='Enter Email Address' />
